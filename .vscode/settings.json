@@ -1,3 +1,5 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "markdown-pdf.outputDirectoryRelativePathFile": true,
+    "markdown-pdf.outputDirectory": "/Users/kappa/Documents/lighthouse"
 }
