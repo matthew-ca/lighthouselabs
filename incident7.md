@@ -62,10 +62,6 @@ IP | Country | Events | URI
 72.252.66.221 | Guatemala | **20** | `<foo><![CDATA[<!DOCTYPE doc [<!ENTITY % dtd SYSTEM`
 47.36.25.95 | United States | **1** | `url=http://169.254.169.254.xip.io/`
 
-## Visual Display
-
-- Screenshot/Video showing the attack and how to find it.
-
   
 
 ## Signature / CVE Details
